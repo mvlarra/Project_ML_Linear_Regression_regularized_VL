@@ -17,5 +17,7 @@
 	"technologies": ["linear regression", "regresion lineal", "data-science", "machine-learning", "python pandas", "python"],
 	"difficulty": "beginner",
 	"duration" : 2,
-    	"projectType": "project"
+    	"projectType": "project",
+	"template_url": "https://github.com/4GeeksAcademy/machine-learning-python-template",
+	"gitpod": true
 }
