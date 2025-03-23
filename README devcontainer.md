@@ -1,10 +1,12 @@
 # ‼️VL: Como aprovechar este template:  
 
-> ## 1. Descargar archivos de este repo, y subirlos al repo de mi nuevo proyecto.  
-> ## 2. Luego precionar F1 → Dev Containers: Rebuild Container  
-> ## 3. Abre un notebook y En el selector de kernel deberías ver: Python 3 (devcontainer)
-> ## 4. Confirmar que tu entorno está listo para trabajar en los notebooks:  
-      *  correr Notebook llamado prueba o scripts desde dentro del contenedor 
+> ### 1. Descargar archivos de este repo, y subirlos al repo de mi nuevo proyecto.  
+>> devcontainer.json, dockerfile, notebooks, readme devcontainer.md, requirements.txt, .gitignore
+> ### 2. Luego precionar F1 → Dev Containers: Rebuild Container  
+> ### 3. Abre un notebook y En el selector de kernel deberías seleccionar: Python 3 (devcontainer)
+> ### 4. Confirmar que tu entorno está listo para trabajar en los notebooks:  
+      *  correr todas las celdas del Notebook llamado prueba, 
+      * ver en la terminal "(devcontainer)" al principio.
 > .
 
   
