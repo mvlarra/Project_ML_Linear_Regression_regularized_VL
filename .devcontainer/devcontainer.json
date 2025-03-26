@@ -10,14 +10,19 @@
     "onCreateCommand": "pip3 install -r requirements.txt",
   
     // Comando que se ejecuta después de que el contenedor está listo:
-    // - sudo apt-get update                  | Actualiza paquetes del sistema
-    // - sudo apt-get install -y tree         | Instala el comando `tree` para ver estructuras de carpetas
-    // - python3 -m pip install ipykernel     | Instala `ipykernel` para poder registrar kernels personalizados
-    // - python3 -m ipykernel install --user --name devcontainer --display-name "Python 3 (devcontainer)"  | "Registra el kernel con el nombre visible 'Python 3 (devcontainer)'.
-    // - echo 'export PS1="(devcontainer) $PS1"' >> ~/.bashrc |  Personaliza el prompt del terminal
+    // - sudo apt-get update                        | Actualiza paquetes del sistema
+    // - sudo apt-get install -y tree               | Instala el comando `tree` para ver estructuras de carpetas
+    // - python3 -m pip install ipykernel           | Instala `ipykernel` para poder registrar kernels personalizados
+    // - python3 -m ipykernel install --user --name devcontainer --display-name "Python 3 (devcontainer)"        | "Registra el kernel con el nombre visible 'Python 3 (devcontainer)'.
+    // - echo 'export PS1="(devcontainer) $PS1"' >> ~/.bashrc     |  Personaliza el prompt del terminal
+    // - Los tres parametros siguientes, crean script para que pandas siempre muestre 4 decimales        
+    //    - mkdir -p ~/.ipython/profile_default/startup              | Crea la carpeta de arranque automática de IPython si no existe
+    //    - echo "import pandas as pd\npd.set_option('display.float_format', '{:.4f}'.format)" \     | Crea un archivo .py ahí dentro.
+    //    - > ~/.ipython/profile_default/startup/00-display-float-format.py       | Escribe el código que configura pandas para mostrar siempre 4 decimales
+    
 
-    // JSON y no soporta varias líneas de codigo en una misma instruccion
-    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tree && python3 -m pip install ipykernel && python3 -m ipykernel install --user --name devcontainer --display-name 'Python 3 (devcontainer)' && echo 'export PS1=\"(devcontainer) $PS1\"' >> ~/.bashrc", 
+    // JSON y soporta varias líneas de codigo en una misma instruccion
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tree && python3 -m pip install ipykernel && python3 -m ipykernel install --user --name devcontainer --display-name 'Python 3 (devcontainer)' && echo 'export PS1=\"(devcontainer) $PS1\"' >> ~/.bashrc && mkdir -p ~/.ipython/profile_default/startup && echo \"import pandas as pd\npd.set_option('display.float_format', '{:.4f}'.format)\" > ~/.ipython/profile_default/startup/00-display-float-format.py", 
   
     // Personalizaciones para el entorno de Visual Studio Code
     "customizations": {
