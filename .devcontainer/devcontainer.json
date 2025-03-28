@@ -31,8 +31,9 @@
       "vscode": {
         // Extensiones que se instalarán automáticamente
         "extensions": [
-          "ms-toolsai.jupyter",     // Soporte para Jupyter Notebooks
-          "ms-python.python"        // Soporte para desarrollo en Python
+          "ms-toolsai.jupyter",      // Soporte para Jupyter Notebooks
+          "ms-python.python",        // Soporte para desarrollo en Python
+          "vscode-codium.codium"     // Instala Codium para sugerencias de código basadas en IA de código abierto
         ]
       }
     }
