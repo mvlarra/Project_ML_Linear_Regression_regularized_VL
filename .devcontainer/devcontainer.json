@@ -30,10 +30,16 @@
     "customizations": {
       "vscode": {
         // Extensiones que se instalarán automáticamente
-        "extensions": [
-          "ms-toolsai.jupyter",      // Soporte para Jupyter Notebooks
-          "ms-python.python",        // Soporte para desarrollo en Python
-          "vscode-codium.codium"     // Instala Codium para sugerencias de código basadas en IA de código abierto
+        "extensions": [                   
+          "ms-toolsai.jupyter",           // Soporte para trabajar con Jupyter Notebooks, permitiendo la ejecución y visualización de código interactivo.
+          "ms-toolsai.jupyter-keymap",    // Atajos de teclado para trabajar con Jupyter Notebooks, facilitando la navegación y edición.
+          "ms-toolsai.jupyter-renderers", // Extensión para mejorar la visualización de datos en Jupyter Notebooks, permitiendo renderizar gráficos y otros tipos de datos de manera más efectiva.      
+          "ms-python.python",             // Extensión esencial para el desarrollo en Python, habilitando características como linting, autocompletado y depuración.
+          "ms-python.vscode-pylance",     // Proporciona soporte avanzado para Python, incluyendo autocompletado y análisis de código.
+          "ms-edgedev.data-wrangler",     // Herramienta para manipulación de datos, permitiendo transformar, limpiar y visualizar datos de manera sencilla y rápida.
+          "ms-azuretools.vscode-docker",  // Extensión para trabajar con Docker, facilitando la creación, gestión y depuración de contenedores directamente desde VS Code.
+          "GitHub.copilot",               // Proporciona sugerencias de código basadas en IA, acelerando la escritura de código al predecir las líneas siguientes (requiere suscripción a Copilot Pro).
+          "mechatroner.rainbow-csv"       // Extensión para mejorar la visualización de archivos CSV, asignando colores a las columnas para facilitar la lectura y análisis de datos.
         ]
       }
     }
